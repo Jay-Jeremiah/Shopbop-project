@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="create.css" />
+</head>
+<body>
+   <main>
+
+    <p class="head">CREATE ACCOUNT</p>
+
+    <div class="sub-head">
+        <p>Create Account</p>
+        <hr>
+    </div>
+    <section class="mid-page">
+        <div class="form-input">
+            <form>
+                <div class="form">
+                    <p>enter your mobile number*</p>
+                    <input type="tel" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Please enter your mobile number(800-768-9087)" required />
+                </div>
+
+                <div class="form">
+                    <p>Login password*</p>
+                    <input type="password" name="password" placeholder="Please enter Login Password" required />
+                </div>
+
+                <div class="form">
+                    <p>Confirm password*</p>
+                    <input type="password" name="confirm password" placeholder="Please confirm your password" required />
+                </div>
+
+                <div class="form">
+                    <p>Invitation Code*</p>
+                    <input type="number" name="Invitation code " placeholder="Please enter the Invitation code" required />
+                </div>
+
+                <label class="label-button">
+                    <input type="checkbox"  name="checkbox" required /> Registration Agreement
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <button type="submit" class="register">Confirm Registration</button>
+   </main>    
+</body>
+</html>
