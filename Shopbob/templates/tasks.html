@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(206, 197, 197);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            background-color: white;
+            border: 1px rgb(206, 197, 197);;
+            width: 760px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .head {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size:20px;
+            text-align: center;
+        }
+
+        .footer{
+            background-color: black;
+            color: white;
+            list-style: none;
+            width: 760px;
+            bottom: 0;
+            position: fixed;
+            display: flex;
+        }
+
+        .footer ul li{
+            display: inline-flex;
+            margin-left: 100px ;
+            padding: 8px;
+        }
+
+        .footer ul li:hover{
+            cursor: pointer;
+            background-color:rgb(128, 128, 128);
+            border-radius: 5px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="head">
+            <p>TASKS</p>
+        </div>
+    
+        <footer class="footer">
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('tasks')}}">Tasks</a></li>
+                <li><a href="{{url_for('orders')}}">Orders</a></li>
+                <li><a href="{{url_for('profile')}}">Profile</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>
