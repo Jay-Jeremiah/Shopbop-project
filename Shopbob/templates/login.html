@@ -4,7 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(206, 197, 197);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            background-color: white;
+            border: 1px rgb(206, 197, 197);;
+            width: 760px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .head {
+            display: flex;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size:20px;
+            text-align: center;
+        }
+
+        .head p{
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        .back:hover {
+            cursor:pointer;
+            background-color: grey;
+            padding: 2px;
+            transition: .5s;
+            width: 50px;
+        }
+
+        .sub-head {
+            font-size: 23px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .sub-head hr {
+            margin: 20px;
+        }
+
+        .mid-page{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .mid-page form{
+            text-align: left;
+            padding: 20px;
+            width: 700px;
+            border-radius: 5px;
+            box-shadow: 0 5px 20px rgba(255, 116, 2, 0.904);
+            margin-bottom: 30px;
+        }
+
+        .form-input {
+            padding: 5px;
+        }
+
+       .form-input p {
+            text-align: left;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .form-input input{
+            width:650px;
+            padding: 10px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+
+.code {
+    width: 40px;
+}
+
+        .forgot {
+            text-decoration: underline;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        .login-button {
+            background-color: black;
+            color:white;
+            font-size: 15px;
+            padding: 10px;
+            width: 702px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 28px;
+            cursor: pointer;
+    }
+
+
+    </style>
 </head>
 <body>
     <main>
@@ -38,6 +153,9 @@
     
         <button class="login-button">Log In</button>
     </main>
+    <script>
+        
+    </script>
 </body>
 </html>
 
